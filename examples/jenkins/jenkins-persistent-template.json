@@ -142,7 +142,8 @@
                                 },
                                 "resources": {
                                     "limits": {
-                                        "memory": "${MEMORY_LIMIT}"
+                                        "memory": "${MEMORY_LIMIT}",
+                                        "cpu": "2500m"
                                     }
                                 },
                                 "securityContext": {
@@ -294,7 +295,7 @@
             "description": "Maximum amount of memory the container can use.",
             "displayName": "Memory Limit",
             "name": "MEMORY_LIMIT",
-            "value": "512Mi"
+            "value": "2Gi"
         },
         {
             "description": "Volume space available for data, e.g. 512Mi, 2Gi.",
